@@ -21,7 +21,7 @@ let jckdCookieArr = []
 let userCk = ''
 let readCount = 0
 
-let jckdShareNum = ($.isNode() ? process.env.jckdShareNum : $.getdata('jckdShareNum')) || 0;
+let jckdShareNum = Math.floor(Math.random()*($.isNode() ? process.env.jckdShareNum : $.getdata('jckdShareNum'))) || 0;
 
 let newsItem = ''
 let UserAgent = ''
